@@ -12,10 +12,12 @@ requireAll(require.context('../../assets/icons', true, /\.svg$/));
 import Header from '../../components/header/header';
 import Footer from '../../components/footer/footer';
 import Modal from '../../components/modal/modal';
+import Row from '../../components/row/row';
 
 fromEvent(document, 'DOMContentLoaded').subscribe(() => {
   new Header(getComponent('header'));
   new Footer(getComponent('footer'));
+  new Row(getComponent('row'));
 
   if (getComponent('modal').component)
     getComponents('modal').forEach((component) => new Modal(component));

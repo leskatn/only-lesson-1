@@ -1,0 +1,38 @@
+.row {
+    $root: &;
+    margin: 60px 0;
+    
+
+    &__conteiner {
+        display: flex;
+
+        &-el {
+            width: 50%;
+            padding: 20px;
+
+            &--red {
+                background-color: $red;
+            }
+
+            &--green {
+                background-color: $green;
+            }
+
+            &--yellow {
+                background-color: $yellow;
+            }
+
+            &--none {
+                display: none;
+            }
+        }
+    }
+
+    &__footer {
+        display: flex;
+        
+        &-button {
+            margin: 10px auto;
+        }
+    }
+}
