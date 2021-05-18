@@ -13,14 +13,20 @@ import Header from '../../components/header/header';
 import Footer from '../../components/footer/footer';
 import Modal from '../../components/modal/modal';
 import Row from '../../components/row/row';
+import form from '../../components/form/form';
 
 fromEvent(document, 'DOMContentLoaded').subscribe(() => {
   new Header(getComponent('header'));
   new Footer(getComponent('footer'));
-  new Row(getComponent('row'));
 
   if (getComponent('modal').component)
     getComponents('modal').forEach((component) => new Modal(component));
+
+  if (getComponent('row').component)
+    new Row(getComponent('row'));
+    
+    if (getComponent('form').component)
+    new form(getComponent('form'));
 
   const images = document.querySelectorAll('img');
   objectFitImages(images);

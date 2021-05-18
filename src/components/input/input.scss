@@ -1,18 +1,29 @@
 .input {
     $root: &;
     position: relative;
+    left: 15px;
+    display: block;
+
 
     input {
         width: 100%;
         color: $black;
         font-size: 16px;
         line-height: 1.2;
-        border-bottom: 1px solid $black;
+        border: 1px solid $black;
         padding: 4px 16px;
+        outline: none;
+        
 
         &::placeholder {
             color: $gray;
-            font-size: 16px;
+            font-size: 20px;
+            visibility: hidden;
+        }
+
+        &__label {
+            margin-bottom: 10px;
+            padding-left: 10px;
         }
     }
 }

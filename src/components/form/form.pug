@@ -1,0 +1,6 @@
+mixin form(props)
+    form.form&attributes(attributes)
+    +input({ name: 'name', label: 'Имя', placeholder: 'Имя', required: true }).form__imput
+    +input({ name: 'surname', label: 'Фамилия', placeholder: 'Фамилия', required: true }).form__imput
+    +input({ name: 'email', label: 'email', placeholder: 'email', required: true }).form__imput
+    +input({ name: 'message', label: 'Сообщение', placeholder: 'Сообщение' }).form__imput
