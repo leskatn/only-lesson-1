@@ -28,6 +28,9 @@ fromEvent(document, 'DOMContentLoaded').subscribe(() => {
     if (getComponent('form').component)
     new form(getComponent('form'));
 
+    if (getComponent('form-button').component)
+    new form(getComponent('form-button'));
+
   const images = document.querySelectorAll('img');
   objectFitImages(images);
 });

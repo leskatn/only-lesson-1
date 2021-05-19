@@ -1,6 +1,6 @@
 .form {
     $root: &;
-    padding: 20px;
+    padding: 40px;
     
     &__imput {
         margin-bottom: 15px;
@@ -11,4 +11,6 @@ h1 {
     font-size: 32px;
 }
 
- 
+.content {
+    padding: 40px;
+}

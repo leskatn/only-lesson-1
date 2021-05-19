@@ -1,8 +1,7 @@
 .input {
     $root: &;
-    position: relative;
-    left: 15px;
     display: block;
+    position: relative;
 
 
     input {
@@ -11,19 +10,20 @@
         font-size: 16px;
         line-height: 1.2;
         border: 1px solid $black;
-        padding: 4px 16px;
+        padding: 8px 16px;
         outline: none;
+        
         
 
         &::placeholder {
             color: $gray;
-            font-size: 20px;
+            font-size: 16px;
             visibility: hidden;
         }
 
         &__label {
             margin-bottom: 10px;
-            padding-left: 10px;
+            padding-left: 6px;
         }
     }
 }
