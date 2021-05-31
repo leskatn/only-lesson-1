@@ -1,9 +1,17 @@
 .form-button {
     $root: &;
     font-size: 16px;
+    font-weight: 600;
     background-color: #808080;
     border: none;
     outline: none;
     padding: 10px 20px;
     left: 15px;
+    transition: opacity .3s;
+    cursor: pointer;
+
+    &--disabled {
+        opacity: 0.6;
+        cursor: default;
+    }
 }
